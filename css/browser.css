@@ -1,0 +1,219 @@
+CGameBrowser
+{
+	background-image: url(%theme%/tableview/bg.png);
+	background-color: #0269b8;
+	background-repeat: no-repeat;
+}
+
+QFrame#browserGroup
+{
+	background-image: url(%theme%/internet/mediumglass_bg.png);
+	background-color: transparent;
+
+	border: 1px solid black;
+	border-top: none;
+
+	padding: 5px;
+}
+
+
+QFrame#directionGroup
+{
+	min-height: 40px;
+	max-height: 40px;
+
+	min-width: 70px;
+	max-width: 70px;
+
+	background-image: url(%theme%/internet/button_holder.png);
+	background-repeat: none;
+
+	border: none;
+
+	padding-right: 5px;
+}
+QPushButton
+{
+	padding: 0px;
+	margin: 0px;
+	border-radius: 0px;
+}
+
+QPushButton#pushBack,
+QPushButton#pushForward
+{
+	min-height: 30px;
+	min-width: 30px;
+
+	background-color: transparent;
+
+	border-image: url(none);
+	border: none;
+}
+
+QPushButton#pushBack
+{
+	image: url(%theme%/internet/back.png);
+
+	padding-left: 2px;
+}
+QPushButton#pushBack:hover
+{
+	image: url(%theme%/internet/back_hover.png);
+}
+QPushButton#pushBack:disabled
+{
+	image: url(%theme%/internet/back_disabled.png);
+}
+
+
+QPushButton#pushForward
+{
+	image: url(%theme%/internet/forward.png);
+
+	padding-right: 2px;
+}
+QPushButton#pushForward:hover
+{
+	image: url(%theme%/internet/forward_hover.png);
+}
+QPushButton#pushForward:disabled
+{
+	image: url(%theme%/internet/forward_disabled.png);
+}
+
+
+
+QPushButton#pushStop
+{
+	image: url(%theme%/internet/stop.png);
+}
+QPushButton#pushStop:hover
+{
+	image: url(%theme%/internet/stop_hover.png);
+}
+
+QPushButton#pushHome
+{
+	image: url(%theme%/internet/home.png);
+}
+QPushButton#pushHome:hover
+{
+	image: url(%theme%/internet/home_hover.png);
+}
+
+QPushButton#pushRefresh
+{
+	image: url(%theme%/internet/refresh.png);
+}
+QPushButton#pushRefresh:hover
+{
+	image: url(%theme%/internet/refresh_hover.png);
+}
+
+QPushButton#pushGo
+{
+	image: url(%theme%/internet/go.png);
+}
+QPushButton#pushGo:hover
+{
+	image: url(%theme%/internet/go_hover.png);
+}
+
+QPushButton#pushStop,
+QPushButton#pushHome,
+QPushButton#pushRefresh,
+QPushButton#pushGo,
+QLineEdit#addressEdit
+{
+	min-height: 22px;
+
+	background-color: transparent;
+
+	border-image: url(none);
+	border: none;
+	border-right: 1px solid rgb(170,170,170);
+}
+
+QPushButton#pushStop,
+QPushButton#pushHome,
+QPushButton#pushRefresh,
+QPushButton#pushGo
+{
+	min-width: 26px;
+}
+
+QPushButton#pushGo
+{
+	border-right: none;
+}
+
+QFrame#nondirectionGroup1
+{
+	max-height: 26px;
+
+	border: 1px solid rgb(145,145,145);
+	border-radius: 3px;
+}
+
+QFrame#nondirectionGroup2
+{
+	max-height: 24px;
+	min-height: 24px;
+
+	border: 1px solid rgb(50,50,50);
+	border-radius: 3px;
+}
+
+QFrame#nondirectionGroup2:hover
+{
+	background-image: url(%theme%/internet/textedit_bg_hover.png);
+}
+
+QFrame#controlGroup, QFrame#addressGroup
+{
+	max-height: 22px;
+	min-height: 22px;
+
+	border: 1px solid white;
+	background-image: url(%theme%/internet/textedit_bg.png);
+}
+
+QFrame#controlGroup
+{
+	border-right: none;
+}
+QFrame#addressGroup
+{
+	border-left: none;
+}
+
+
+QFrame#statusFrame
+{
+	min-height: 15px;
+	max-height: 15px;
+
+	background-image: url(%theme%/internet/status_bg.png);
+
+	border: 1px solid black;
+	border-bottom: none;
+
+	padding: 1px 1px 3px 3px;
+}
+
+QLabel#statusText
+{
+	color: rgb(200,200,200);
+}
+
+QProgressBar#statusBar
+{
+	min-height: 15px;
+	max-height: 15px;
+
+	background-color: transparent;
+	background-image: url(%theme%/internet/lightglass_bg.png);
+
+	border: 1px solid black;
+}

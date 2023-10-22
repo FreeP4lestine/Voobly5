@@ -1,0 +1,411 @@
+QLabel, QDialog, QTreeWidget, CMessenger, CChatDialog, QWidget
+{
+	font-family: Tahoma, Microsoft Sans Serif, Arial, Verdana;
+}
+
+
+QDialog#Options QWidget#layoutWidget
+{
+	background-color: transparent;
+	background-image: url(none);
+}
+
+CMessenger CSplash #header
+{
+	/*background: transparent;
+	color: transparent;	
+	max-height: 0px;*/
+}
+
+
+CMessenger CSplash #footer
+{
+	background: transparent;
+	color: black;	
+	font-family: Arial;
+	font-size: 10px;
+	margin-top: 20px;
+}
+
+CMessenger CSplash #status1Center
+{
+	font-family: Arial;
+	font-size: 12px;
+	padding: 6px;
+	padding-bottom: 14px;
+}
+
+CMessenger CSplash #status2Center
+{
+	font-family: Arial;
+	font-size: 12px;
+	padding: 6px;
+	padding-bottom: 12px;
+}
+
+CMessenger
+{
+	background: rgb(240,240,240);
+	min-height: 400px;
+	min-width: 240px;
+}
+
+CMessenger #headerGroup
+{
+	background-color: black;
+	background-image: url(%theme%/im/messenger_header.png);
+	background-repeat: repeat-x;
+
+	
+	border: 1px solid black;
+
+	padding: 3px;
+	
+	max-height: 70px;
+}
+
+CMessenger #statusGroup
+{
+	border: 0;
+
+}
+
+CMessenger #searchGroup
+{
+	border: 1px solid #254d5c; 
+	margin: 3px;
+	background: white;
+	padding: 0px;
+	
+}
+
+CMessenger #searchEdit
+{
+	margin-left: 3px;
+	border: 0px;
+	padding: 3px;
+	
+}
+
+CMessenger #searchButton
+{
+	
+	padding:0px;	
+	border-radius: 0px;
+	
+	 color: white;
+	 background: #567dbc;
+	
+	max-width: 30px;
+	min-height: 20px;
+	
+	 border: 1px solid #567dbc;
+	 
+	font-family: tahoma;
+	font-size: 13px;
+	
+}
+
+
+CMessenger #headerImage
+{
+	margin: 0px;
+	padding: 0px 8px;
+	border: none;
+
+	background-color: transparent;
+	background-image: url(%theme%/im/photoframe.png);
+	background-repeat: no-repeat;	
+	background-position: center center;
+	margin-right: 10px;
+	margin-left: 5px;
+}
+
+CMessenger #headerName
+{
+	font-size: 14px;
+	color: #ffffff;
+	
+	padding: 0px;
+	margin: 0px;
+}
+
+
+CMessenger #headerName:hover
+{ 
+	color: rgb(220,220,220);
+}
+
+CMessenger #myStatus
+{
+	font-size: 13px;
+	color: rgb(230,230,230);
+	
+	padding: 0px;
+}
+
+CChatDialog 
+{
+	background-color: #00375e;
+	background-image: url(%theme%/lobby/q_bg.png);
+	background-repeat: no-repeat;	
+	margin: 0px;
+	padding: 0px;
+}
+
+
+CChatDialog QWidget#layoutWidget
+{
+	border: 1px solid black;
+	border-bottom: 1px solid #000000;
+
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+
+	background-color: black;
+
+	margin: 0px 1px 0px 0px;
+}
+
+
+CChatDialog CChatText
+{ 
+	border: none;
+
+	padding: 0px;
+	margin: 0px 1px;
+
+	background-color: white; 	
+}
+
+CChatDialog QSplitter::handle
+{ 
+	background-color: rgb(240,240,240);
+
+	border: 1px solid rgb(250,250,250);
+
+	margin: 0px 1px;
+	padding: 3px 0px;		
+}
+
+CChatDialog #OptionGroupBox 
+{ 
+	background-color: rgb(240,240,240);
+
+	border: 1px solid rgb(250,250,250);
+
+	border-bottom: 1px solid rgb(220,220,220);
+
+	padding: 0px;
+	margin: 3px 1px 0px;
+}
+
+CChatDialog #EditGroupBox 
+{ 
+
+	border: none;
+
+	background-color: white;
+	background-image: url(%theme%/chat_textgroup.png);
+	background-repeat: repeat-x;
+	background-position: bottom;	
+
+
+	margin: 0px 1px;
+}
+
+CChatDialog QPlainTextEdit
+{ 
+	min-height: 32px;
+	font-size: 12px;
+
+
+	border: 1px solid rgb(250,250,250);
+	border-bottom-left-radius: 3px;
+
+	background-color: white;
+	background-image: url(%theme%/chat_textgroup.png);
+	background-repeat: repeat-x;
+	background-position: bottom;	
+
+	padding: 0px;
+}
+
+CChatDialog #send
+{ 
+	background-color: rgb(240,240,240);
+
+	border: 1px solid rgb(250,250,250);
+	border-left: 1px solid rgb(220,220,220);
+
+	border-bottom-right-radius: 3px;
+
+	padding: 0px 5px;
+}
+
+CChatDialog #send:hover, CChatDialog #send:pressed
+{ 
+	background-color: rgb(220,220,220);
+	color: rgb(100,100,100);
+}
+
+CChatDialog #send:disabled
+{ 
+	color: rgb(150,150,150);
+}
+
+
+CChatDialog #headerImage
+{ 
+	margin: 8px 0px 0px 10px;
+	padding: 0px 0px 0px 5px;
+}
+
+CChatDialog #headerName
+{ 
+	margin: 8px 0px 0px 3px;
+	font-size: 13px;
+	font-weight: bold;	
+	border: none;
+	color: white;
+}
+
+CChatDialog #headerName:hover
+{ 
+	color: rgb(220,220,220);
+}
+
+
+
+#OptionGroupBox QPushButton
+{
+	padding: 0px;
+	border-radius: 0px;
+	margin: 2px;
+	margin-bottom: 2px;
+	height: 25px;
+	
+	border: 0px;
+	
+	background-color: transparent;
+	
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+CChatDialog #pushFont
+{
+	width: 35px;
+
+	background-image: url(%theme%/buttons/chatfont.png);		
+}
+CChatDialog #pushFont:hover
+{
+	width: 35px;
+	background-image: url(%theme%/buttons/chatfont_hover.png);		
+}
+
+
+CChatDialog #pushNudge
+{
+	width: 35px;
+	background-image: url(%theme%/buttons/chatnudge.png);		
+}
+
+CChatDialog #pushNudge:hover
+{
+	background-image: url(%theme%/buttons/chatnudge_hover.png);		
+}
+
+CChatDialog #pushEmoticons
+{
+	width: 35px;
+	background-image: url(%theme%/buttons/smile.png);
+}
+
+CChatDialog #pushEmoticons:hover
+{
+	width: 35px;
+	background-image: url(%theme%/buttons/smile_hover.png);
+}
+
+
+CMessenger #userList
+{
+	color: black;
+	font-size: 13px;
+	background-image: url(none);
+	border-radius: 0px;
+	border: none;
+}
+
+CMessenger CUserList::item:hover, CMessenger CUserList::branch:selected, CMessenger CUserList::item:selected
+{
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgb(100,100,100), stop: 1 rgb(110,110,110));
+	color: white;
+}
+
+CUserList
+{
+	qproperty-OnlineColor: black;
+	qproperty-OfflineColor: rgb(150,150,150);
+	
+	qproperty-ModeratorColor: #ea0000;
+
+	qproperty-PremiumColor: #f3a600;
+	qproperty-ModeratorFontWeight: normal;
+	qproperty-PremiumFontWeight: normal;
+	
+	qproperty-ParentWeight: 504;	
+	font-size: 13px;
+}
+
+QMessageBox QLabel
+{
+	border: 0px solid black;    
+	color: black;
+}
+
+
+
+
+CLobbyBrowserList::item:hover, CLobbyBrowserList::branch:selected, CLobbyBrowserList::item:selected
+{
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgb(100,100,100), stop: 1 rgb(110,110,110));
+	color: white;
+}
+
+CLobbyBrowserList
+{
+	qproperty-OnlineColor: black;
+	qproperty-OfflineColor: rgb(150,150,150);
+	
+	qproperty-ModeratorColor: #ea0000;
+
+	qproperty-PremiumColor: #f3a600;
+	qproperty-ModeratorFontWeight: normal;
+	qproperty-PremiumFontWeight: normal;
+	
+	qproperty-ParentWeight: 504;	
+	font-size: 13px;
+	
+	color: black;
+	font-size: 13px;
+	background-image: url(none);
+	border-radius: 0px;
+	border: none;
+}
+
+
+CLobbyBrowser
+{
+	background: rgb(240,240,240);
+	color: black;
+}
+
+CLobbyBrowser QLabel
+{
+	border: 0px solid black;    
+	color: black;
+}
+

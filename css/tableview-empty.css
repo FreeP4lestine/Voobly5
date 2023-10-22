@@ -1,0 +1,54 @@
+QWidget
+{
+	font-family: Arial, Tahoma, Microsoft Sans Serif, Verdana;
+}
+
+#m_CountItem
+{
+	color: white;	
+}
+
+#gameNum
+{
+	color: white;	
+}
+
+#m_TitleItem
+{
+	color: white;	
+}
+
+#m_JoinButton {
+	background-color: transparent;
+	background-image: url(%theme%/tableview/main_button.png);
+	background-repeat: no-repeat;
+
+	border-image: url(none);
+	border: none;
+	
+	color: white;
+
+	font-size: 11px;
+	font-weight: bold;
+
+	padding: 0px;
+	padding-right: 21px;
+}
+#m_JoinButton:hover {
+	background-image: url(%theme%/tableview/main_button_hover.png);
+}
+#m_JoinButton:pressed {
+	background-image: url(%theme%/tableview/main_button_pressed.png);
+}
+#m_JoinButton:disabled {
+	color: #bbbbbb;
+	background-image: url(%theme%/tableview/main_button_disabled.png);
+}
+
+#m_InfoButton {
+	border-image: url(none);
+	border: none;
+	color: transparent;
+	background-color: transparent;
+	background-image: url(none);
+}

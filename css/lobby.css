@@ -1,0 +1,594 @@
+QLabel, QDialog, QTreeWidget, QWidget
+{
+	font-family: Tahoma, Microsoft Sans Serif, Arial, Verdana;
+}
+
+CEmoticons
+{
+	background-color: white;
+	color: black;      
+	border: 1px solid black;    
+	padding: 6px;
+}
+
+CLobby
+{
+	background-image: url(%theme%/tableview/bg.png);
+	background-color: #0269b8;
+	background-repeat: no-repeat;
+}
+
+CLobby QSplitter
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+CULSplitter#splitter_2:handle, CGameRoom QSplitter::handle
+{
+	background: transparent;
+	background-image: url(%theme%/lobby/horz_grabbar_top.png);
+	background-repeat: repeat-y;
+
+	border: 1px solid rgb(0,0,0);
+	border-top: none;
+
+	
+	margin: 0px 0px 0px 5px;
+
+	padding: 0px 2px 0px 0px;
+}
+
+
+CVSplitter#splitter:handle
+{
+	background: transparent;
+	background-image: url(%theme%/lobby/horz_grabbar_top.png);
+	background-repeat: repeat-x;
+
+	border: 1px solid rgb(0,0,0);
+
+	margin: 0px 0px 0px 0px;
+
+	padding: 2px 0px 0px 0px;
+}
+
+CGameRoom QSplitter::handle
+{ 
+	margin: 0px 5px 0px 0px;	
+}
+
+
+CLobby CChatText
+{
+	border: none;
+	border-bottom: 1px solid black;
+
+	background: white;
+
+	padding: 0px;
+	margin: 0px;	
+}
+
+CLobby CChatArea #LobbyChatTextGroup, CGameRoom CChatArea #LobbyChatTextGroup
+{ 
+
+	border: 1px solid rgb(250,250,250);
+
+	background-color: #eeeeee;
+
+
+	margin: 0px;
+
+	min-height: 31px;
+	max-height: 31px;
+}
+
+CChatArea #input
+{ 
+	min-height: 29px;
+
+	font-size: 13px;
+
+	border: none;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+
+	background-color: transparent;
+	background-image: url(%theme%/chat_textgroup2.png);
+	background-repeat: repeat-x;
+	background-position: bottom;
+
+	padding: 0px;
+}
+
+CLobby CChatArea #send, CGameRoom CChatArea #send
+{ 
+	border-image: url(none);
+	min-width: 0px;
+	min-height: 0px;
+	max-height: none;
+
+	border: none;
+	border-radius: 0px;
+	border-left: 1px dashed rgb(180,180,180);
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+
+	background-color: transparent;
+	background-image: url(%theme%/chat_textgroup2.png);
+	background-repeat: repeat-x;
+	background-position: bottom;
+
+
+	margin: 0px;
+	padding: 0px 7px;
+
+	color: black;
+}
+
+CChatArea #send:hover, CChatArea #send:pressed
+{ 
+	color: rgb(50,50,50);
+}
+
+CChatArea #send:disabled
+{
+	color: rgb(150,150,150);
+}
+
+
+QPushButton
+{
+	min-height: 23px;
+
+	margin: 0px;
+	padding: 0px;
+	background-color: transparent;
+	background-image: url(none);
+	border-image: url(%theme%/buttons/normal_options_button.png);
+	color: black;
+	
+}
+
+QPushButton:hover, QPushButton:focus
+{
+	border-image: url(%theme%/buttons/hover_options_button.png);
+}
+QPushButton:pressed
+{
+	border-image: url(%theme%/buttons/pressed_options_button.png);
+	
+}
+
+QDialog#GameResume QLabel#label
+{
+	color: black;
+	border: none;
+}
+
+QPushButton#pushResume
+{
+
+	min-height: 25px;
+	max-height: 25px;
+
+	min-width: 120px;
+	max-width: 120px;
+
+	border-image: url(%theme%/buttons/normal_options_button_m.png);
+	padding: 0px;
+	margin: 0px;
+}
+
+QPushButton#pushResume:hover
+{
+	border-image: url(%theme%/buttons/hover_options_button_m.png);
+}
+QPushButton#pushResume:pressed
+{
+	border-image: url(%theme%/buttons/pressed_options_button_m.png);
+}
+
+QPushButton#fontColor
+{
+	min-height: 25px;
+	max-height: 25px;
+
+	background-color: white;
+
+	border-image: url(none);
+
+	border: 1px solid rgb(230,230,230);
+	padding: 0px;
+	margin: 0px;
+}
+
+
+QPushButton#pushSettings
+{
+	min-height: 27px;
+	max-height: 27px;
+
+	min-width: 77px;
+	max-width: 77px;
+
+	background-color: transparent;
+
+	border-image: url(%theme%/buttons/normal_settings_button.png);
+
+	margin-left: 10px;
+}
+QPushButton#pushSettings:hover
+{
+	border-image: url(%theme%/buttons/hover_settings_button.png);
+}
+QPushButton#pushSettings:pressed
+{
+	border-image: url(%theme%/buttons/pressed_settings_button.png);
+}
+
+QPushButton#pushLaunch
+{
+	min-height: 27px;
+	max-height: 27px;
+
+	min-width: 77px;
+	max-width: 85px;
+
+	background-color: transparent;
+
+	border-image: url(%theme%/buttons/normal_launch_button.png);
+
+	font-weight: bold;
+}
+QPushButton#pushLaunch:hover
+{
+	border-image: url(%theme%/buttons/hover_launch_button.png);
+}
+QPushButton#pushLaunch:pressed
+{
+	border-image: url(%theme%/buttons/pressed_launch_button.png);
+}
+QPushButton#pushLaunch:disabled
+{
+	margin-left: 10px;
+	border-image: url(%theme%/buttons/disabled_launch_button.png);
+	color: #235f0e;
+}
+
+QPushButton:disabled
+{ 
+	min-width: 85px;
+	max-width: 85px;
+	background-color: #0f9aea;
+	color: #8ab3d5;
+}
+
+
+#smileyButton
+{
+	border-image: url(none);
+	min-width: 0px;
+	min-height: 0px;
+	max-height: none;
+
+	image: url(%theme%/buttons/smile.png);
+
+	border: 1px solid #000000;
+	border-radius: 0px;
+
+	margin: 0px;
+}
+
+CLobby #smileyButton, CGameRoom #smileyButton
+{
+	width: 35px;
+
+	background-color: transparent;
+	background-image: url(%theme%/chat_textgroup2.png);
+	background-repeat: repeat-x;
+	background-position: bottom;
+
+	border: none;
+	border-right: 1px dashed rgb(180,180,180);
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+
+	padding: 0px;
+
+}
+
+#smileyButton:hover, #smileyButton:pressed
+{
+	image: url(%theme%/buttons/smile_hover.png);
+}
+
+
+
+
+CChatArea QLineEdit
+{
+	padding: 1px;
+}
+
+
+CGameSettings
+{
+	/*max-width: 300px;
+	max-height: 320px;	
+	min-width: 300px;
+	min-height: 320px;*/
+
+	background-image: url(%theme%/lobby/s_bg.png);
+	background-repeat: no-repeat;	
+	background-position: top left;
+
+	background-color: #d2d2d2;
+}
+
+CGameSettings QTextEdit#description, CGameSettings QLineEdit
+{
+	border-top: 1px solid #354855;
+	border-left: 1px solid #354855;
+	border-bottom: 1px solid #50616d;
+	border-right: 1px solid #50616d;
+	border-radius: 3px;
+
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #eeeeee, stop: 1 #ffffff);
+	padding: 2px;
+	margin: 0px;	
+}
+
+CGameSettings QStackedWidget#stackedWidget
+{
+	background-color: transparent;
+	padding: 3px;
+}
+
+CGameSettings QGroupBox
+{
+	font-size: 14px;
+	color: white;
+	padding-top: 12px;
+	padding-left: 10px;
+	border: none;
+}
+
+CGameSettings QTextEdit#description:focus, CGameSettings QLineEdit:focus
+{
+	border: 1px solid #ffffff;
+}
+
+CGameSettings QLabel
+{
+	border: none;
+	color: white;
+}
+
+CGameInfo
+{
+
+
+
+	border: 1px solid #004376;
+
+	padding: 6px;
+
+
+	background-color: #00375e;
+
+}
+
+CGameInfo QLabel
+{
+	color: white;
+}
+
+CGameRoom
+{
+	background-color: #004d82;
+	background-image: url(%theme%/lobby/g_bg.png);	
+	background-repeat: no-repeat;
+
+	border: none;
+	
+	qproperty-GameModLinkColor: rgb(255,255,255);
+}
+
+
+CGameRoom QWidget#layoutWidget
+{
+	background-image: url(%theme%/lobby/darkglass_bg.png);
+}
+
+CGameRoom CChatText
+{
+	border: 1px solid white;
+	background: rgb(240,240,240); 	
+}
+
+CListView
+{
+	border: none;
+
+	background-image: url(%theme%/listview/clear_bg.png);
+
+	background-color: transparent;
+	alternate-background-color: transparent;
+
+	margin: 0px 0px 0px 0px;
+	
+}
+
+CListView::item
+{
+	color: white;
+
+
+	padding: 1px 0px;
+	margin: 0px;
+}
+
+CListView::item:selected
+{
+
+
+	background-image: url(%theme%/listview/hover_bar.png);
+	background-repeat: repeat-x;
+	background-color: transparent;
+
+
+
+	color: #fffef4;
+
+}
+
+#tableView 
+{
+
+	background-color: transparent;
+
+	background-image: url(%theme%/lobby/table_bg.png);
+
+
+	border: none;
+
+	padding: 0px 0px 0px 3px;
+}
+
+
+#TableViewWidget
+{
+	
+	background-color: transparent;
+}
+
+
+#m_TableItemBackground
+{
+	border: none;
+	background-image: url(%theme%/tableview/table.png);
+	background-repeat: no-repeat;
+}
+
+
+#FlashGroup 
+{
+	border: 0px solid #5B5B5B; 	
+	padding: 0px;
+	margin: 0px;
+}
+
+#FlashGroupInner
+{
+	border: 1px solid #5B5B5B; 	
+	padding: 0px;
+	margin: 0px;
+	background-color: #5B5B5B;
+}
+
+/*
+CUserList
+{
+	qproperty-LookingColor: rgb(0,0,0);
+	qproperty-WaitingColor: rgb(110,110,110);
+	qproperty-PlayingColor: rgb(200,200,200);
+
+	qproperty-ModeratorColor: #c52020;
+
+	qproperty-PremiumColor: #e6de00;
+
+	qproperty-ModeratorFontWeight: normal;
+	qproperty-PremiumFontWeight: normal;
+
+	qproperty-ParentWeight: 504;
+	
+	font-size: 13px;
+}
+*/
+
+CUserList
+{
+	qproperty-LookingColor: rgb(250,250,250);
+	qproperty-WaitingColor: rgb(175,175,175);
+	qproperty-PlayingColor: rgb(100,100,100);
+
+	qproperty-ModeratorColor: #f48d8d;
+
+	qproperty-PremiumColor: #e2d434;
+
+	qproperty-ModeratorFontWeight: normal;
+	qproperty-PremiumFontWeight: normal;
+
+	qproperty-ParentWeight: 504;
+	
+	font-size: 13px;
+}
+
+QMessageBox QLabel
+{
+
+	border: 0px solid black;    
+	color: black;
+}
+
+
+QMessageBox QPushButton
+{
+	padding-top:1px;
+	padding-bottom:1px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+
+
+CChatArea QTabWidget::pane { /* The tab widget frame */
+     border: 0px; /* no border so when the tabbar is hidden there is no trace of it */
+     /* border-bottom: 2px solid #C2C7CB;*/
+ }
+
+CChatArea QTabWidget::tab-bar {
+     left: 5px; /* move to the right by 5px */
+ }
+
+ /* Style the tab using the tab sub-control. Note that
+     it reads QTabBar _not_ QTabWidget */
+CChatArea QTabBar::tab {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #0099df, stop: 0.4 #028bd1,
+                                 stop: 0.5 #028bd1, stop: 1.0 #025fa2);
+     border-left: 1px solid #00aeeb;
+     border-top: 1px solid #00aeeb;
+     color:white;
+     border-bottom: 0px;
+     border-bottom-color: transparent; /* same as the pane color */
+     min-width: 8ex;
+     padding: 2px 00px 2px 00px;
+     text-align: center;
+     margin-bottom: 2px;
+     height: 22px;
+     width: 78px;
+ }
+
+CChatArea QTabBar::tab:selected, QTabBar::tab:hover {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+                                 stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+     color:black;
+     font-weight:bold;
+ }
+
+CChatArea QTabBar::tab:selected {
+     border-color: #9B9B9B;
+     border-bottom: 0px solid #C2C7CB;/* same as pane color */
+     color:black;
+     font-weight:bold;
+ }
+
+
+CChatArea QTabBar::tab:!selected {
+     margin-top: 0px; /* make non-selected tabs look smaller */
+ }
+ 
