@@ -91,15 +91,15 @@ QCheckBox::indicator:checked:pressed {
 	background: #50a9d3;
 	border: 1px solid #50a9d3;
 }
+
 /*#registerGroup*/
 #registerGroup {
-	color: palette(link-visited);
+	color: darkorange;
 	border: none;
 	border-radius: 4px;
 	background: #272727;
 	min-width: 220px;
 	min-height: 50px;
-	
 }
 /*
 CSplash #status1 {
