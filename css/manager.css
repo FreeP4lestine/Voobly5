@@ -1,0 +1,41 @@
+QPushButton {
+    border : 1px solid black;
+    font-weight: bold;
+    font-size: 20px;
+}
+QPushButton#btn_1 {
+    background : #FF0000;
+}
+QPushButton#btn_2 {
+    background : #FF8000;
+}
+QPushButton#btn_3 {
+    background : #FFFF00;
+}
+QPushButton#btn_4 {
+    background : #80FF00;
+}
+QPushButton#btn_5 {
+    background : #00FF00;
+}
+QPushButton#btn_6 {
+    background : #00FF80;
+}
+QPushButton#btn_7 {
+    background : #00FFFF;
+}
+QPushButton#btn_8 {
+    background : #0080FF;
+}
+QPushButton#btn_9 {
+    background : #0000FF;
+}
+QPushButton#btn_10 {
+    background : #8000FF;
+}
+QPushButton#btn_11 {
+    background : #FF00FF;
+}
+QPushButton#btn_12 {
+    background : #FF0080;
+}
